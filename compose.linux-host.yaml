@@ -1,0 +1,8 @@
+services:
+  gateway:
+    network_mode: host
+    ports: !reset []
+    extra_hosts: !reset []
+    environment:
+      GATEWAY_HOST: 127.0.0.1
+      COMFYUI_UPSTREAM: http://127.0.0.1:8188
